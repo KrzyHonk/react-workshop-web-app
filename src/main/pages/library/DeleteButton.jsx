@@ -4,7 +4,7 @@ import "./table.css";
 import "./bookForm.css";
 
 const DeleteButton = (props) => {
-    const navigateToEditBookPage = () => {
+    const handleBookRemoval = () => {
         deleteBookById(props.bookId)
             .then((res) => {
                 if (res.ok) {
@@ -15,7 +15,7 @@ const DeleteButton = (props) => {
             });
     }
 
-    return <button className="favorite styled" onClick={navigateToEditBookPage}>Delete</button>
+    return <button className="favorite styled" onClick={handleBookRemoval}>Delete</button>
 }
 
 export default DeleteButton;

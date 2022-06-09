@@ -7,7 +7,7 @@ const InputChild = ({ inputText, handleInput, handleToggle }) => {
 
     return (
         <div>
-            <h2>I'm responsible for handling input.</h2>
+            <h2>I'm responsible for handling input</h2>
             <input value={inputText} onChange={handleChange} />
             <button onClick={handleToggle}>Label on/off</button>
         </div>
