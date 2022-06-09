@@ -1,9 +1,7 @@
 import React from 'react';
 import "./table.css"
-import EditButton from "./EditButton";
-import DeleteButton from "./DeleteButton";
 
-const TableRow = ({book, refreshBookList}) => {
+const TableRow = ({book}) => {
     const {id, title, author, published, isbn, publisher} = book;
 
     return <tr>
@@ -13,12 +11,7 @@ const TableRow = ({book, refreshBookList}) => {
         <td>{published}</td>
         <td>{isbn}</td>
         <td>{publisher}</td>
-        <td>
-            <EditButton {...book} />
-        </td>
-        <td>
-            <DeleteButton bookId={book.id} refreshBookList={refreshBookList}/>
-        </td>
+        {/* TODO Add buttons for delete and edit */}
     </tr>
 }
 

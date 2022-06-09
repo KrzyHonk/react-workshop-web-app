@@ -1,15 +1,10 @@
 import React from 'react';
-import TableRow from "./TableRow";
 import "./table.css"
 
-const TableBody = ({bookList, refreshBookList}) => {
-    const renderBooks = () => {
-        return bookList.map(book => <TableRow key={book.id} book={book} refreshBookList={refreshBookList} />);
-    }
-
+const TableBody = () => {
     return (
         <tbody>
-        {renderBooks()}
+         {/* TODO Implement table rows rendering*/}
         </tbody>
     )
 }
