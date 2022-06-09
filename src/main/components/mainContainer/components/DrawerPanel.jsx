@@ -1,8 +1,8 @@
 import React from 'react';
 
-import { Drawer, List } from '@mui/material';
-import { basicClassComponent, partialRendering, pureFunctionalComponent } from '../../../routing/appRoutes';
-import { LinkedListItem } from './LinkedListItem';
+import {Drawer, List} from '@mui/material';
+import {basicClassComponent, library, partialRendering, pureFunctionalComponent} from '../../../routing/appRoutes';
+import {LinkedListItem} from './LinkedListItem';
 
 export const DrawerPanel = () => {
     return (
@@ -25,9 +25,10 @@ export const DrawerPanel = () => {
                     height: '82%',
                 }}
             >
-                <LinkedListItem linkTo={partialRendering} label={'Partial rendering'} defaultRoute={true} />
-                <LinkedListItem linkTo={basicClassComponent} label={'Basic Class Component'} />
-                <LinkedListItem linkTo={pureFunctionalComponent} label={'Pure Functional Component'} />
+                <LinkedListItem linkTo={partialRendering} label={'Partial rendering'} defaultRoute={true}/>
+                <LinkedListItem linkTo={basicClassComponent} label={'Basic Class Component'}/>
+                <LinkedListItem linkTo={pureFunctionalComponent} label={'Pure Functional Component'}/>
+                <LinkedListItem linkTo={library} label={'Library component'}/>
             </List>
         </Drawer>
     );

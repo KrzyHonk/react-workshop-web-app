@@ -1,0 +1,28 @@
+{
+  "books": [
+    {
+      "id": 0,
+      "title": "1984",
+      "author": "Orwell, George",
+      "published": "December 2021",
+      "isbn": "9791280035356",
+      "publisher": "Intra S.r.l.s."
+    },
+    {
+      "id": 1,
+      "title": "Dune",
+      "author": "Herbert, Frank",
+      "published": "December 2005",
+      "isbn": "9780441013593",
+      "publisher": "Ace"
+    },
+    {
+      "id": 2,
+      "title": "Ubik",
+      "author": "Dick, Philip K.",
+      "published": "April 2012",
+      "isbn": "9780547572291",
+      "publisher": "Mariner Books"
+    }
+  ]
+}

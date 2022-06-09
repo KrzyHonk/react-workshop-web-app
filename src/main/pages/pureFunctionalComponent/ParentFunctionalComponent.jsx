@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import DisplayChild from './DisplayChild';
 import InputChild from './InputChild';
 
-const ParentFunctionalComponent = (props) => {
+const ParentFunctionalComponent = () => {
     const [value, setValue] = useState('');
     const [toogle, setToogle] = useState(false);
 
@@ -10,7 +10,7 @@ const ParentFunctionalComponent = (props) => {
         setValue(newValue);
     };
 
-    const swithLabelDisplay = () => {
+    const switchLabelDisplay = () => {
         setToogle(!toogle);
     };
 
@@ -19,7 +19,7 @@ const ParentFunctionalComponent = (props) => {
             <h1>I'm the parent component</h1>
             <DisplayChild textToDisplay={value} labelToggle={toogle} />
             <br />
-            <InputChild inputText={value} handleInput={handleChange} handleToggle={swithLabelDisplay} />
+            <InputChild inputText={value} handleInput={handleChange} handleToggle={switchLabelDisplay} />
             <br />
         </div>
     );
