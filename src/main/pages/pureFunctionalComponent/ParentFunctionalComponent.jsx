@@ -3,7 +3,7 @@ import DisplayChild from './DisplayChild';
 import InputChild from './InputChild';
 
 const ParentFunctionalComponent = () => {
-    const [value, setValue] = useState('');
+    const [value, setValue] = useState('Joe');
     const [toogle, setToogle] = useState(false);
 
     const handleChange = (newValue) => {

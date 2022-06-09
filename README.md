@@ -22,6 +22,10 @@ You may also see any lint errors in the console.
 
 This project comes with basic REST API mock build using [json-server](https://github.com/typicode/json-server).
 Script which sets basic REST endpoints for CRUD operations is in file `${projectRoot/test-utils/json-server/restApiMock.js}`.
+You can run the backend mock by running given command from `json-server` directory:
+
+### `node restApiMock.js`
+
 The JSON server runs by default on port 3001, but you can change it in script file:
 
 ```javascript
